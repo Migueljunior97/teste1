@@ -1,0 +1,121 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPyixUqy0uMpgpc+N6DNUBT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Migueljunior97/teste1/blob/main/exercicio%20dia%2015/23\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "string_1 = input(\"Digite a primeira String: \")\n",
+        "string_2 = input(\"Digite a segunda String: \")\n",
+        "tamanho_string_1 = len(string_1)\n",
+        "tamanho_string_2 = len(string_2)\n",
+        "print(string_1 + \" \" + str(tamanho_string_1)) \n",
+        "print(string_2 + \" \" + str(tamanho_string_2))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ogRQYEpRA6NE",
+        "outputId": "e6895c2b-b85f-4ece-b817-32aecb8a4aa4"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a primeira String: Brasil Hexa 2022\n",
+            "Digite a segunda String: Brasil! Hexa 2022!\n",
+            "Brasil Hexa 2022 16\n",
+            "Brasil! Hexa 2022! 18\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "04USv0kp9iow",
+        "outputId": "f86dcfe5-3d78-41c9-b50b-2635be12dd7e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite seu nome: miguel\n",
+            "LEUGIM\n"
+          ]
+        }
+      ],
+      "source": [
+        "nome = input(\"Digite seu nome: \")\n",
+        "\n",
+        "print (nome.upper () [::-1])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = str(input(\"Digite o seu nome: \")).upper()\n",
+        "for i in range(0, len(nome)+1):\n",
+        "  print (nome[:i])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hGa7ZTmJ_hfb",
+        "outputId": "857e49ed-e678-4d6a-d0a3-9d1f9a511c9d"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o seu nome: miguel\n",
+            "\n",
+            "M\n",
+            "MI\n",
+            "MIG\n",
+            "MIGU\n",
+            "MIGUE\n",
+            "MIGUEL\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
